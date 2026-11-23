@@ -3,6 +3,8 @@
 Execute, a partir da raiz do projeto:
 
 ```bash
+make test
+# ou diretamente:
 bash tests/run_tests.sh
 ```
 
