@@ -1,0 +1,15 @@
+# Executáveis e arquivos temporários de compilação
+*.exe
+*.o
+*.obj
+*.dll
+*.so
+*.a
+*.out
+
+# Bibliotecas proprietárias e arquivos locais de build
+Bibliotecas E1 Impressora/
+Bibliotecas_E1_Impressora.zip
+
+# Artefatos dos testes
+/tests/.build/
