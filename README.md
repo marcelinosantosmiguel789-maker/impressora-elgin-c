@@ -6,10 +6,10 @@ Aplicação de terminal acadêmica para controlar uma impressora térmica Elgin 
 
 - Windows 10/11 e GCC para Windows (MinGW-w64, por exemplo).
 - Impressora Elgin i8 ou i9 e driver do fabricante instalados, para testar comunicação física.
-- `E1_Impressora01.dll` da mesma arquitetura do compilador (x86 com GCC 32-bit ou x64 com GCC 64-bit), copiada para a pasta do executável.
+- `E1_Impressora01.dll` x64 incluída na raiz do repositório; compile com MinGW/GCC 64-bit.
 - `XMLSAT.xml` e/ou `CANC_SAT.xml` na pasta de execução se usar as opções SAT.
 
-A DLL e o pacote de bibliotecas do fabricante não são incluídos neste repositório. Obtenha-os pelos materiais oficiais/do curso e confira os termos de distribuição. A DLL de 32 bits e a de 64 bits não são intercambiáveis.
+Esta pasta contém a DLL x64 fornecida para o trabalho. Ela não é compatível com um compilador de 32 bits.
 
 ## Compilar e executar
 
@@ -55,7 +55,7 @@ Credenciais demonstrativas: usuário `admin`, senha `1234` (três tentativas). N
 | 1 | Configurar conexão |
 | 2 | Abrir conexão |
 | 3 | Fechar conexão |
-| 4 | Imprimir texto e escolher 1–100 cópias |
+| 4 | Imprimir texto e informar a quantidade de cópias |
 | 5 | Imprimir QR Code |
 | 6 | Imprimir código de barras CODE 128 de exemplo |
 | 7 | Imprimir `XMLSAT.xml` |
@@ -80,4 +80,4 @@ O conjunto de testes deste repositório usa substitutos locais das APIs do Windo
 
 ## Referência da atividade
 
-Implementado a partir do enunciado “Trabalho de Programação em C — Controlando uma Impressora Térmica Elgin”, que pede as funcionalidades do menu descritas acima. O PDF e os arquivos da biblioteca do fabricante não são redistribuídos neste repositório.
+Implementado a partir do enunciado “Trabalho de Programação em C — Controlando uma Impressora Térmica Elgin”.
